@@ -28,6 +28,7 @@ class AuditLogServiceProvider extends ServiceProvider
         $this->loadMigrationsFrom(__DIR__.'/database/migrations');
         $this->publishes([
             __DIR__.'/views' => resource_path('views/vendor/AuditLog'),
+            __DIR__.'/database/migrations/' => database_path('migrations')
         ]);
     }
 }
