@@ -1,0 +1,26 @@
+{
+    "name": "milton2913/auditlog",
+    "description": "This will Using this package, a data will be stored in the audit log table, from which it will be possible to see who completed the action and the current and previous data.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "milton2913",
+            "email": "milton2913@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Milton2913\\AuditLog\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Milton2913\\AuditLog\\AuditLogServiceProvider"
+            ]
+        }
+    }
+}
